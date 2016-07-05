@@ -3,12 +3,12 @@ A simple jsonp library written in oop javascript
 # Usage:
 # Basic usage with default options:
 - Does nothing but log returned data in console.
-```
+``` Javascript
  $jsonp('http://en.wikipedia.org/w/api.php?grnnamespace=0&format=json&callback=?&action=query&generator=random&callback=callback');
 ```
 # With options
 - Options can be passed in as plain object
-```
+``` Javascript
     $jsonp('http://en.wikipedia.org/w/api.php?grnnamespace=0&format=json&callback=?&action=query&generator=random&callback=callback', {
         onSuccess: function(json) {
             console.log('success!', json);
